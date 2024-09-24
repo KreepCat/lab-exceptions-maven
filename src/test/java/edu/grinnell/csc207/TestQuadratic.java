@@ -11,8 +11,8 @@ import org.junit.jupiter.api.Test;
  * Tests of the Quadratic class.
  *
  * @author Samuel A. Rebelsky
- * @author Your Name Here
- * @author Your Name Here
+ * @author Maral
+ * @author Alex
  */
 public class TestQuadratic {
   /**
@@ -34,5 +34,13 @@ public class TestQuadratic {
     assertEquals(0, (new Quadratic(1, -3, 0)).smallerRoot(), 0.001,
         "The smaller root of x^2 - 3x is 0");
   } // testRootsNoC()
+
+  @Test
+  public void simpletest1() {
+    assertEquals(0, (new Quadratic(1, 3, -10)).smallerRoot(), 0.001,
+        "The smaller root is -5");
+    assertEquals(0, (new Quadratic(6, 1, -12)).smallerRoot(), 0.001,
+        "The smaller root is 2");
+  } // testRootsOnlyA()
 
 } // class TestQuadratic
