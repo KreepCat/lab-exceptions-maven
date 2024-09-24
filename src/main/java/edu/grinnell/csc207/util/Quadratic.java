@@ -4,8 +4,7 @@ package edu.grinnell.csc207.util;
  * Quadratic expressions (of the form ax^2 + bx + c).
  *
  * @author Samuel A. Rebelsky
- * @author YOUR NAME HERE
- * @author YOUR NAME HERE
+ * @author Maral, Alex
  */
 public class Quadratic {
   // +--------+------------------------------------------------------
@@ -95,7 +94,7 @@ public class Quadratic {
    *   is only one).
    */
   public double smallerRoot() {
-    return 0.0; // STUB
+    return ((-this.b - Math.sqrt((double)(this.b * this.b - 4 * this.a * this.c))) / (2 * this.a));
   } // smallerRoot
 
   /**
