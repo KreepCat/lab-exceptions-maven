@@ -23,7 +23,8 @@ public class ReadIntExperiment {
    *
    * @throws Exception when something goes wrong.
    */
-  public static void main(String[] args) throws Exception {
+  public static void main(String[] args) throws Exception 
+  {
     PrintWriter pen = new PrintWriter(System.out, true);
     BufferedReader eyes = new BufferedReader(new InputStreamReader(System.in));
 
